@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Word Maze Books</title>
+    <meta name="description" content="Keep your mind sharp with Word Maze puzzle books.">
+    <style>
+    body {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table td, table td * {
+        vertical-align: top;
+    }
+    .intro {
+    }
+    .title {
+    }
+    .note {
+        background: #ffe5cc;
+        border: solid black;
+        padding: 0.25em;
+    }
+    .shadow {
+        box-shadow: -5px 5px #ff9633;
+    }
+    </style>
+    <script>
+    // Creare's 'Implied Consent' EU Cookie Law Banner v:2.4
+    // Conceived by Robert Kent, James Bavington & Tom Foyster
+    var dropCookie = true; // false disables the Cookie, allowing you to style the banner
+    var cookieDuration = 60; // Number of days before the cookie expires, and the banner reappears
+    var cookieName = 'complianceCookie'; // Name of our cookie
+    var cookieValue = 'on'; // Value of cookie
+    function createDiv(){
+        var bodytag = document.getElementsByTagName('body')[0];
+        var div = document.createElement('div');
+        div.setAttribute('id','cookie-law');
+        div.innerHTML = '<p style="border:1px solid black;">This website uses cookies. By scrolling down you grant your permission to use cookies. <a class="close-cookie-banner" href="javascript:void(0);" onclick="removeMe();"><span>X</span></a></p>';
+        // Be advised the Close Banner 'X' link requires jQuery
+        // bodytag.appendChild(div); // Adds the Cookie Law Banner just before the closing </body> tag
+        // or
+        bodytag.insertBefore(div,bodytag.firstChild); // Adds the Cookie Law Banner just after the opening <body> tag
+        document.getElementsByTagName('body')[0].className+=' cookiebanner'; //Adds a class tothe <body> tag when the banner is visible
+        createCookie(window.cookieName,window.cookieValue, window.cookieDuration); // Create the cookie
+    }
+    function createCookie(name,value,days) {
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime()+(days*24*60*60*1000));
+            var expires = "; expires="+date.toGMTString();
+        }
+        else var expires = "";
+        if(window.dropCookie) {
+            document.cookie = name+"="+value+expires+"; path=/";
+        }
+    }
+    function checkCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+    window.onload = function(){
+        if(checkCookie(window.cookieName) != window.cookieValue){
+            createDiv();
+        }
+    }
+    function removeMe(){
+        var element = document.getElementById('cookie-law');
+        element.parentNode.removeChild(element);
+    }
+    </script>
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2150972624959741');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2150972624959741&ev=PageView&noscript=1"
+        /></noscript>
+    <script>
+    function linkToAmazonUS(sku, asin) {
+        fbq('track', 'Search', {
+            content_ids: [ sku ],
+        });
+        window.open("https://www.amazon.com/dp/" + asin + '/?tag=wordmazebooks-20');
+    } // linkToAmazonUS()
+    </script>
+</head>
+<body>
+    <script>
+    fbq('track', 'ViewContent');
+    </script>
+    <center>
+        <h1>Word Maze&trade; Books</h1>
+        <p>
+            <strong>These puzzle books are awesome!</strong>
+            If you like word search then you will love Word Maze puzzles.
+            A Word Maze puzzle is like a word search.
+            There is a grid of letters and you need to find words.
+            The letters can go left, right, up, or down.
+            However, a Word Maze puzzle is different because you need to find an entire saying.
+            Sometimes it is easy to find the saying, but other times it can take a long time to find the right path through the maze of letters.
+        </p>
+        <img src="sample-puzzle.png" width="200" alt="sample word search grid">
+        <p>
+            In this sample puzzle, look for "SMILES ARE CONTAGIOUS."
+            With patience, you can find meaning in the chaos.
+        </p>
+
+        <h1>Free Printable Word Search</h1>
+        <p>Here are some free samples to show what the puzzles are like:</p>
+        <a href="pdf/wordmaze-010103.pdf">Confucious and Theodore Roosevelt</a><br>
+        <a href="pdf/wordmaze-010104.pdf">Napoleon Hill and Barbara De Angelis</a>
+
+        <h1>You can buy these books at Amazon.com:</h1>
+
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-1001', '179457560X');"><img src="img/1001-cover-icon.jpg" alt="Big Book of Word Search Wisdom Volume 1"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-1002', '1795162120');"><img src="img/1002-cover-icon.jpg" alt="Big Book of Word Search Wisdom Volume 2"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-1003', '1795214406');"><img src="img/1003-cover-icon.jpg" alt="Big Book of Word Search Wisdom Volume 3"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-1101', 'B07N47G2T1');"><img src="img/1101-cover-icon.jpg" alt="Word Search Book for Ebook Readers Volume 1"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-1102', 'B07N664ZWQ');"><img src="img/1102-cover-icon.jpg" alt="Word Search Book for Ebook Readers Volume 2"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0201', '1730800564');"><img src="img/0201-marktwain-1-kindle-cover-icon.jpg" alt="Mark Twain Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0202', '1731284233');"><img src="img/0202-benjamin-franklin-cover-icon.jpg" alt="Benjamin Franklin Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0203', '1731347189');"><img src="img/0203-solar-system-cover-icon.jpg" alt="Solar System Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0204', '1731404549');"><img src="img/0204-state-capitals-cover-icon.jpg" alt="State Capitals Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0205', '173141398X');"><img src="img/0205-henry-david-thoreau-cover-icon.jpg" alt="Henry David Thoreau Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0206', '1731544146');"><img src="img/0206-aesops-fables-cover-icon.jpg" alt="Aesops Fables Word Maze Puzzle"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0207', '1792606591');"><img src="img/0207-presidents-cover-icon.jpg" alt="American President Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0401', '1790317185');"><img src="img/0401-cats-cover-icon.jpg" alt="Clever Cats Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0402', '1790360382');"><img src="img/0402-dogs-cover-icon.jpg" alt="Delightful Dogs Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0403', '1790821665');"><img src="img/0403-horses-cover-icon.jpg" alt="Happy Horses Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0404', '1791834655');"><img src="img/0404-birds-cover-icon.jpg" alt="Beautiful Birds Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0405', '1792897782');"><img src="img/0405-fish-cover-icon.jpg" alt="Fabulous Fish Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0501', '1790452961');"><img src="img/0501-carols-cover-icon.jpg" alt="Christmas Carols Word Maze Puzzles"></a>
+        <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0502', '1790533503');"><img src="img/0502-xmas-jokes-cover-icon.jpg" alt="Have a Funny Punny Christmas Word Maze Puzzles"></a>
+
+        <h2>Humor</h2>
+        <p>
+            Looking for a good laugh?
+            Check out the Terrible Stories series!
+            They are not puzzles, but they are tons of fun.
+        </p>
+        <p>
+            <table border="0"><tr>
+                <td width="220">
+                    <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0801', 'B07MCHTD5B');"><img src="img/0801-curse-ham-cover-icon.jpg"></a>
+                    <br>
+                    Warn your friends about this book.
+                    Marital spats aren't that uncommon, but this one is a world-ending doozy.
+                    A side-splitting raucous comedy and a quick read.
+                    Safe for everyone, unless you happen to live in Porksville, Kentucky.
+                </td>
+                <td width="220">
+                    <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0801', 'B07MCHTD5B');"><img src="img/0802-spy-cold-cover-icon.jpg"></a>
+                    <br>
+                    Warn your friends about this book.
+                    A continuation of the Porksville story.
+                    <b>Released in early 2019.</b>
+                </td>
+            </tr></table>
+        </p>
+
+        <h2>Older eBooks</h2>
+        <p>
+            These were the original Word Maze ebooks.
+            These original puzzle ebooks do not format as well on older ebook readers, but they can still be fun!
+        </p>
+        <p>
+            <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0101', 'B07K6WCDFJ');"><img src="img/0101-christmas-carol-puzzles-cover.jpg" alt="Christmas Carol Puzzles"></a>
+            <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0102', 'B07K8YDN93');"><img src="img/0102-christmas-in-your-pocket-cover.jpg" alt="Christmas in Your Pocket"></a>
+            <a style="cursor:pointer;" onClick="linkToAmazonUS('US-0103', 'B07KBSF8WH');"><img src="img/0103-have-a-funny-punny-christmas.jpg" alt="Have a Funny Punny Christmas"></a>
+        </p>
+        <hr>
+
+        <p align="right">
+            <small>
+                Word Maze is a trademark of Thomas S. Phillips.<br>
+                Copyright &copy;2019 Thomas S. Phillips.<br>
+                All rights reserved.
+            </small>
+        </p>
+    </center>
+</body>
+</html>
